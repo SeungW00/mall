@@ -1,6 +1,5 @@
 package kr.hs.hs.controller;
 
-import java.util.List;
 
 import kr.hs.hs.model.Goods;
 import kr.hs.hs.service.GoodsService;
@@ -10,13 +9,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(value={"mainView","loginView"})
-public class GoodsList {
+@RequestMapping("/goodsSave")
+public class GoodsRegister {
 	@Autowired
 	private GoodsService goodsService;
 	@RequestMapping
-	public List<Goods> list(){
-		return goodsService.list();
+	public String Register(Goods goods){
+		goodsService.register(goods);
+		return "redirect:loginView";
+		
 	}
 
 }

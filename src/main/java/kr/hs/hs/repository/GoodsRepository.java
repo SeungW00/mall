@@ -11,4 +11,6 @@ public interface GoodsRepository {
 	
 	List<Goods> findAll();
 
+	void insert(Goods goods);
+
 }

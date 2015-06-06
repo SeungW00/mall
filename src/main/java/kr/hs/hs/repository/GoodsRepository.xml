@@ -7,5 +7,7 @@
 			goodsName, price, id
 		from goodsInfo
 	</select>
-	
+	<insert id="insert" parameterType="Goods">
+		insert into goodsInfo(goodsName,price,id,explanation) values(#{goodsName}, #{price}, #{id},#{explanation})
+	</insert>
 </mapper>

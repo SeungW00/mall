@@ -4,10 +4,10 @@ import java.util.List;
 
 import kr.hs.hs.model.Goods;
 
-public interface GoodService {
-
+public interface GoodsService {
+	
 	List<Goods> list();
 
-
-
+	void register(Goods goods);
+	
 }

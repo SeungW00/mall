@@ -9,7 +9,7 @@ import kr.hs.hs.model.Goods;
 import kr.hs.hs.repository.GoodsRepository;
 
 @Service
-public class GoodsServiceImpl implements GoodService {
+public class GoodsServiceImpl implements GoodsService {
 	
 	@Autowired
 	private GoodsRepository goodsRepository;
@@ -20,4 +20,12 @@ public class GoodsServiceImpl implements GoodService {
 		return goodsRepository.findAll();
 	}
 
+	@Override
+	public void register(Goods goods) {
+		// TODO Auto-generated method stub
+		goodsRepository.insert(goods);
+		
+	}
+
+	
 }

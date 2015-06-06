@@ -4,6 +4,7 @@ public class Goods {
 	private String goodsName;
 	private Integer price;
 	private String id;
+	private String explanation;
 	public String getGoodsName() {
 		return goodsName;
 	}
@@ -21,6 +22,12 @@ public class Goods {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+	public String getExplanation() {
+		return explanation;
+	}
+	public void setExplanation(String explanation) {
+		this.explanation = explanation;
 	}
 
 
