@@ -6,16 +6,17 @@
   <meta charset="UTF-8">
   <title>쇼핑몰</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="mainView.css">
+  <link rel="stylesheet" type="text/css" href="loginView.css">
 
 </head>
 <body>
   <div class="container">
     <div>
-      <button class="btn" type="button" OnClick="window.location='register.jeju'">회원가입</button>
-      <button class="btn"  type="button" OnClick="window.location='login.jeju'">로그인</button>
+      <h4>현승우님 환영합니다 </h4>
+      <button class="btn" type="button" OnClick="window.location='goodsRegister.jeju'">상품등록</button>
+      <button class="btn " id="logoutBt" type="button">로그아웃</button>
     </div>
-    <div>
+     <div>
       <table class="table">
 			<thead>
 				<tr>

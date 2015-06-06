@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/mainView")
+@RequestMapping(value={"mainView","loginView"})
 public class GoodsList {
 	@Autowired
 	private GoodService goodsService;
