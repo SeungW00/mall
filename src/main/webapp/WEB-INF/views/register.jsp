@@ -32,7 +32,7 @@
         </div>
     <div class="form-group">
       <button type="submit" class="btn btn-default">회원가입</button>
-      <button type="reset" class="btn btn-default">취소</button>
+      <button type="reset" class="btn btn-default" OnClick="window.location='mainView'">취소</button>
     </div>
     </form>
 </div>
