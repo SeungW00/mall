@@ -1,6 +1,7 @@
 package kr.hs.hs.model;
 
 public class Goods {
+	private Integer goodsIdx;
 	private String goodsName;
 	private Integer price;
 	private String id;
@@ -28,6 +29,12 @@ public class Goods {
 	}
 	public void setExplanation(String explanation) {
 		this.explanation = explanation;
+	}
+	public Integer getGoodsIdx() {
+		return goodsIdx;
+	}
+	public void setGoodsIdx(Integer goodsIdx) {
+		this.goodsIdx = goodsIdx;
 	}
 
 

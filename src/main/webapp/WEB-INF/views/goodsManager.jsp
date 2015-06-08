@@ -25,14 +25,21 @@
 				</tr>
 			</thead>
 			<tbody>
-			<c:forEach items="${goods}" var="goods">
+	
+			<c:forEach items="${goodsList}" var="goods">
 				<tr>
 					<td>${goods.goodsIdx} </td>
 					<td>${goods.goodsName} </td>
-					<td></td>
+					<td>
 					
-					
-				</tr>
+						<div class="btn-group" role="group" aria-label="...">
+						<form>
+						  <button class="btn btn-default" value="${goods.goodsIdx}">수정</button>						  
+						</form>
+						  <button type="button" class="btn btn-default">삭제</button>
+						</div>
+					</td>
+					</tr>
 				
 				</c:forEach>
 			</tbody>	

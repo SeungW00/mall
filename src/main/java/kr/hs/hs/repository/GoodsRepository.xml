@@ -12,7 +12,7 @@
 	</insert>
 	
 	<update id="update" parameterType="Goods"> 
-		update student set name=#{name}, password=#{password} where id = #{id}
+		update goodsInfo set goodsName=#{goodsName}, price=#{price},explanation=#{explanation} where goodsIdx = #{goodsIdx}
 	</update> 
 	<select id="SellerList" resultType="Goods" >
 		select 
