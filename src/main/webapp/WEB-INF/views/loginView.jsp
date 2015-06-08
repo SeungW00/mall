@@ -30,7 +30,7 @@
 			<tbody>
 			<c:forEach items="${goodsList}" var="goods">
 				<tr>
-					<td>${goods.goodsName} </td>
+					<td><a href="goodsInfo.jeju?goodsIdx=${goods.goodsIdx}">${goods.goodsName}</a> </td>
 					<td>${goods.price} </td>
 					<td>${goods.id} </td>
 				</tr>
