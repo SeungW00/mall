@@ -15,6 +15,7 @@ public class GoodsUpdate {
 	@RequestMapping
 	public String Update(Goods goods){
 		goodsService.update(goods);
+
 		return "redirect:goodsManager";
 		
 	}

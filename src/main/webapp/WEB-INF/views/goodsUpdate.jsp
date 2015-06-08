@@ -35,6 +35,7 @@
     </div>
       <div class="form-group">
       <input type="submit" value="수정" />
+       <input type="reset" value="취소" OnClick="window.location='goodsManager.jeju'" />
     </div>
     </form>
   </div>
