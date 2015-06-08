@@ -34,8 +34,8 @@
 					<td>
 					
 						<div class="btn-group" role="group" aria-label="...">
-						<form>
-						  <button class="btn btn-default" value="${goods.goodsIdx}">수정</button>						  
+						<form action="goodsUpdate.jeju" method="post">
+						  <button class="btn btn-default" name ="goodsIdx" value="${goods.goodsIdx}">수정</button>						  
 						</form>
 						</div>
 					</td>
