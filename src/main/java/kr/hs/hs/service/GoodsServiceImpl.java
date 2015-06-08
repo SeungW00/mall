@@ -27,5 +27,18 @@ public class GoodsServiceImpl implements GoodsService {
 		
 	}
 
+	@Override
+	public void update(Goods goods) {
+		// TODO Auto-generated method stub
+		goodsRepository.update(goods);
+	}
+
+	@Override
+	public List<Goods> SellerList() {
+		// TODO Auto-generated method stub
+		
+		return goodsRepository.SellerList();
+	}
+
 	
 }

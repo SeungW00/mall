@@ -13,4 +13,8 @@ public interface GoodsRepository {
 
 	void insert(Goods goods);
 
+	void update(Goods goods);
+
+	List<Goods> SellerList();
+
 }

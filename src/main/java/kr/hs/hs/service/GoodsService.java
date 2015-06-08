@@ -9,5 +9,9 @@ public interface GoodsService {
 	List<Goods> list();
 
 	void register(Goods goods);
+
+	void update(Goods goods);
+
+	List<Goods> SellerList();
 	
 }

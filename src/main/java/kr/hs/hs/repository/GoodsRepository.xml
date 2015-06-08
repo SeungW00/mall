@@ -10,4 +10,13 @@
 	<insert id="insert" parameterType="Goods">
 		insert into goodsInfo(goodsName,price,id,explanation) values(#{goodsName}, #{price}, #{id},#{explanation})
 	</insert>
+	
+	<update id="update" parameterType="Goods"> 
+		update student set name=#{name}, password=#{password} where id = #{id}
+	</update> 
+	<select id="SellerList" resultType="Goods" >
+		select 
+			goodsIdx, goodsName
+		from goodsInfo
+	</select>
 </mapper>
