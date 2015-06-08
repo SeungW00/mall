@@ -19,7 +19,7 @@
       <table class="table">	
 			<thead>
 				<tr>
-					<th>제품코드</th>
+					<th>제품번호</th>
 					<th>상품명</th>
 					<th>수정</th>	
 					<th>삭제</th>

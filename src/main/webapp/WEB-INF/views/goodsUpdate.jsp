@@ -18,7 +18,7 @@
     </div>
       <form action="goodsUpdateForm" method="post">
        <div class="form-group">
-      <label for="goodsIdx" >제품번호 </label>
+      <label for="goodsIdx" >상품번호 </label>
       <input class="form-control" id="goodsIdx" type="text" name="goodsIdx" value="<%=goodsIdx%>" readonly>
 
     </div>
