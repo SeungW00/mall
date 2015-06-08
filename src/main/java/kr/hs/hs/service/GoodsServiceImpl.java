@@ -40,5 +40,11 @@ public class GoodsServiceImpl implements GoodsService {
 		return goodsRepository.SellerList();
 	}
 
+	@Override
+	public void delete(Goods goods) {
+		// TODO Auto-generated method stub
+		goodsRepository.delete(goods);
+	}
+
 	
 }

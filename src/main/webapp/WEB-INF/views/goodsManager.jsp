@@ -21,7 +21,8 @@
 				<tr>
 					<th>제품코드</th>
 					<th>상품명</th>
-					<th>관리</th>			
+					<th>수정</th>	
+					<th>삭제</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -36,9 +37,15 @@
 						<form>
 						  <button class="btn btn-default" value="${goods.goodsIdx}">수정</button>						  
 						</form>
-						  <button type="button" class="btn btn-default">삭제</button>
 						</div>
 					</td>
+					<td>
+					<div class="btn-group" role="group" aria-label="...">
+						<form action="goodsDelete" method="post">
+						  <button class="btn btn-default" name ="goodsIdx" value="${goods.goodsIdx}">삭제</button>						  
+						</form>
+						</div>
+					 </td>
 					</tr>
 				
 				</c:forEach>

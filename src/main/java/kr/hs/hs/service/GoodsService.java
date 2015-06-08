@@ -13,5 +13,7 @@ public interface GoodsService {
 	void update(Goods goods);
 
 	List<Goods> SellerList();
+
+	void delete(Goods goods);
 	
 }

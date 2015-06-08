@@ -19,4 +19,8 @@
 			goodsIdx, goodsName
 		from goodsInfo
 	</select>
+	
+	<update id="delete" parameterType="Goods"> 
+		delete from goodsInfo where goodsIdx = #{goodsIdx}
+	</update> 
 </mapper>

@@ -17,4 +17,6 @@ public interface GoodsRepository {
 
 	List<Goods> SellerList();
 
+	void delete(Goods goods);
+
 }
