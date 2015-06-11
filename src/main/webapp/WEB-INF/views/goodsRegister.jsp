@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <div>
-      <h1>현승우님 상품</h1>
+      <h1>${sessionScope.userLoginInfo.name}님 상품</h1>
     </div>
     <form action="goodsSave" method="post">
     <div class="form-group">

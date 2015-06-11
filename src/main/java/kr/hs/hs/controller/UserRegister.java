@@ -9,11 +9,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/userSave")
 public class UserRegister {
 	@Autowired
 	private UserService userService;
-	@RequestMapping
+	
+	 @RequestMapping("/register")
+	  public String registerView() {
+	     return "register";
+	    }
+	@RequestMapping("/userSave")
 	public String Register(User user){
 		userService.register(user);
 		return "redirect:mainView";

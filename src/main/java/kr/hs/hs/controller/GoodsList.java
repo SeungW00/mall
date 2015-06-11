@@ -16,6 +16,7 @@ public class GoodsList {
 	private GoodsService goodsService;
 	@RequestMapping
 	public List<Goods> list(){
+		
 		return goodsService.list();
 	}
 

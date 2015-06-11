@@ -12,8 +12,8 @@
 <body>
   <div class="container">
     <div>
-      <button class="btn" type="button" OnClick="window.location='register.jeju'">회원가입</button>
-      <button class="btn"  type="button" OnClick="window.location='login.jeju'">로그인</button>
+      <button class="btn" type="button" OnClick="window.location='register'">회원가입</button>
+      <button class="btn"  type="button" OnClick="window.location='login'">로그인</button>
     </div>
     <div>
       <table class="table">

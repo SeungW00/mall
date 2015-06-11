@@ -12,9 +12,9 @@
 <body>
   <div class="container">
     <div>
-    <!--   <h4>${sessionScope.userLoginInfo.username}님 환영합니다 </h4> -->
-      <button class="btn" type="button" OnClick="window.location='goodsRegister.jeju'">상품등록</button>
-      <button class="btn" type="button" OnClick="window.location='goodsManager.jeju'">상품관리</button>
+       <h4>${sessionScope.userLoginInfo.name}님 환영합니다 </h4> 
+      <button class="btn" type="button" OnClick="window.location='goodsRegister'">상품등록</button>
+      <button class="btn" type="button" OnClick="window.location='goodsManager'">상품관리</button>
       <button class="btn " id="logoutBt" type="button">로그아웃</button>
     </div>
      <div>

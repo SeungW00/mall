@@ -9,11 +9,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/goodsSave")
 public class GoodsRegister {
 	@Autowired
 	private GoodsService goodsService;
-	@RequestMapping
+	
+	 @RequestMapping("/goodsRegister")
+	  public String goodsRegisterView() {
+	     return "goodsRegister";
+	    }
+	
+	@RequestMapping("/goodsSave")
 	public String Register(Goods goods){
 		goodsService.register(goods);
 		return "redirect:loginView";
