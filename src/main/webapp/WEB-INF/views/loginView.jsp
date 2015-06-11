@@ -7,11 +7,11 @@
   <meta charset="UTF-8">
   <title>쇼핑몰</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="loginView.css">
+  <link rel="stylesheet" type="text/css" href="loginView1.css">
 
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="container">
     <div>
        <h4>${sessionScope.userLoginInfo.name}님 환영합니다 </h4> 
       <button class="btn" type="button" OnClick="window.location='goodsRegister'">상품등록</button>

@@ -9,7 +9,7 @@
   <meta charset="UTF-8">
   <title>상품수정</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="goodsUpdate.css">
+  <link rel="stylesheet" type="text/css" href="goodsUpdate1.css">
 </head>
 <body>
 
@@ -42,9 +42,14 @@
     </div>
       <div class="form-group">
       <input type="submit" value="수정"  />
-       <input type="reset" value="취소" OnClick="window.location='goodsManager.jeju'" />
+      <input type="reset" value="취소" OnClick="window.location='loginView'" />				
     </div>
     </form>
+    <div class="btn-group" role="group" aria-label="...">
+						<form action="goodsDelete" method="post">
+						  <button class="btn btn-default" name ="goodsIdx" value="${goods.goodsIdx}">삭제</button>						  
+						</form>
+				</div>
   </div>
 </body>
 </html>

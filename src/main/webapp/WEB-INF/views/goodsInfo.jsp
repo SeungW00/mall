@@ -28,9 +28,13 @@
     <h2><%=goodsName %></h2>
     </div>
     <div id="bts">
-  
+  	<div class="btn-group" role="group" aria-label="...">
+    <form action="goodsUpdate" method="post">
     <button class="btn btn-default" type="button" OnClick="window.location='loginView'">목록</button>
-    <button class="btn btn-default" type="button" id="bt">수정</button>
+    <button class="btn btn-default" id="bt" name ="goodsIdx" value="<%=	goodsIdx%>">수정</button>
+    
+    </form>
+    </div>
     <script type="text/javascript">
     var id='<%=id%>';
     var sessionId='${sessionScope.userLoginInfo.id}';

@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <title>상품등록</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="goodsRegister.css">
+  <link rel="stylesheet" type="text/css" href="goodsRegister1.css">
 </head>
 <body>
   <div class="container">
@@ -39,6 +39,7 @@
       <input type="reset" value="취소"  OnClick="window.location='loginView'" />
     </div>
     </form>
+    
   </div>
 </body>
 </html>

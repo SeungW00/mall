@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <title>로그인</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="login.css">
+  <link rel="stylesheet" type="text/css" href="login1.css">
 
 </head>
 <body>

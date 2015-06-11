@@ -8,11 +8,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/goodsUpdateForm")
 public class GoodsUpdate {
 	@Autowired
 	private GoodsService goodsService;
-	@RequestMapping
+	
+	@RequestMapping("/goodsUpdate")
+	  public String goodsUpdateView() {
+	     return "goodsUpdate";
+	    }
+	@RequestMapping("/goodsUpdateForm")
 	public String Update(Goods goods){
 		goodsService.update(goods);
 		return "redirect:goodsManager";
