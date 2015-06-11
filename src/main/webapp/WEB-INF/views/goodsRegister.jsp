@@ -14,10 +14,10 @@
       <h1>${sessionScope.userLoginInfo.name}님 상품</h1>
     </div>
     <form action="goodsSave" method="post">
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="goodsImage" >상품 이미지</label>
-      <input type="file" id="goodsImage">
-    </div>
+      <input type="file" id="goodsImage" > 
+    </div>-->
     <div class="form-group">
       <label for="goodsName" >상품명</label>
       <input type="text" class="form-control" id="goodsName" name="goodsName">
@@ -35,8 +35,8 @@
       <textarea id="detail" class="form-control" rows="5" name="explanation"></textarea>
     </div>
       <div class="form-group">
-      <input type="submit" value="등록" />
-      <input type="reset" value="취소"  OnClick="window.location='loginView'" />
+      <input type="submit" value="등록" class="btn btn-default" />
+      <input type="reset" value="취소"  OnClick="window.location='loginView'" class="btn btn-default"/>
     </div>
     </form>
     
