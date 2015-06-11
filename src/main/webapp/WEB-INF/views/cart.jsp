@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <title>장바구니</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="loginView1.css">
+  <link rel="stylesheet" type="text/css" href="cart.css">
 
 </head>
 <body>
