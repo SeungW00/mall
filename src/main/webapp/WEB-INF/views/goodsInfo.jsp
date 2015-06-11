@@ -14,7 +14,7 @@
 <html lang="kr">
 <head>
   <meta charset="UTF-8">
-  <title>goodsInfo</title>
+  <title>상품정보</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="goodsInfo.css">
 </head>
