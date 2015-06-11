@@ -7,6 +7,7 @@
 	String explanation=request.getParameter("goodsExplanation"); 
 	String id=request.getParameter("goodsId"); 
 		%>
+		
 <%@ page session="true" %>
 <!DOCTYPE html>
 
@@ -27,8 +28,15 @@
     <h2><%=goodsName %></h2>
     </div>
     <div id="bts">
+  
     <button class="btn btn-default" type="button" OnClick="window.location='loginView'">목록</button>
-    <button class="btn btn-default" type="button">수정</button>
+    <button class="btn btn-default" type="button" id="bt">수정</button>
+    <script type="text/javascript">
+    var id='<%=id%>';
+    var sessionId='${sessionScope.userLoginInfo.id}';
+   	if(id!=sessionId)
+    document.getElementById('bt').style.visibility='hidden';
+    </script>
     </div>
     </div>
     <div id="middle">
