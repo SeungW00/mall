@@ -1,5 +1,7 @@
 package kr.hs.hs.service;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,5 +19,12 @@ public class UserServiceImpl implements UserService {
 		// TODO Auto-generated method stub
 		userRepository.insert(user);
 	}
+	@Override
+	public User getUserData(User user) {
+		// TODO Auto-generated method stub
+		return userRepository.getUser(user);
+	}
+
+
 
 }

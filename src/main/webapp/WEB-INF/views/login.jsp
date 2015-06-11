@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="kr">
 <head>
@@ -10,17 +11,17 @@
 </head>
 <body>
   <div class="container">
-  <form class="form-horizontal">
+  <form class="form-horizontal" name ="loginForm" method="post" action="loginForm">
     <div class="form-group">
       <label for="inputId" class="col-sm-2 control-label">id</label>
       <div class="col-sm-10">
-        <input type="id" class="form-control" id="inputId" placeholder="id">
+        <input type="text" class="form-control" id="inputId" placeholder="id" name="id">
       </div>
     </div>
     <div class="form-group">
       <label for="inputPassword" class="col-sm-2 control-label">Password</label>
       <div class="col-sm-10">
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password">
       </div>
     </div>
 
@@ -31,7 +32,7 @@
       </div>
       <div class="col-sm-2">
 
-        <button type="submit" class="btn btn-default">취소</button>
+        <button type="reset" class="btn btn-default">취소</button>
       </div>
     </div>
   </form>

@@ -7,4 +7,9 @@
 		insert into userInfo1(id,password,name,authority) values(#{id}, #{password}, #{name}, #{authority})
 	</insert>
 	
+	<select id="getUser" resultType="User" >
+		select 
+			*
+		from userInfo1 where id=#{id}
+	</select>
 </mapper>

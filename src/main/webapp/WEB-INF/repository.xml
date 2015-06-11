@@ -26,5 +26,5 @@
 		<property name="basePackage" value="kr.hs.hs.repository" />
 		<property name="annotationClass" value="org.springframework.stereotype.Repository" /> 
 	</bean>
-
+	
 </beans>
