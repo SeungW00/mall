@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page session="true" %>
 <!DOCTYPE html>
 <html lang="kr">
 <head>
@@ -23,7 +24,7 @@
     </div>
      <div class="form-group">
       <label for="goodsName" >판매자</label>
-      <input type="text" class="form-control" id="goodsSeller" value="abcd" name="id">
+      <input type="text" class="form-control" id="goodsSeller" value="${sessionScope.userLoginInfo.id}" name="id">
     </div>
     <div class="form-group">
       <label for="goodsPrice" >가격</label>
@@ -35,7 +36,7 @@
     </div>
       <div class="form-group">
       <input type="submit" value="등록" />
-      <input type="reset" value="취소"  OnClick="window.location='loginView.jeju'" />
+      <input type="reset" value="취소"  OnClick="window.location='loginView'" />
     </div>
     </form>
   </div>

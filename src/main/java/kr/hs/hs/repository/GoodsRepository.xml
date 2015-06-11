@@ -4,7 +4,7 @@
 <mapper namespace="kr.hs.hs.repository.GoodsRepository">
 	<select id="findAll" resultType="Goods" >
 		select 
-			goodsIdx,goodsName, price, id
+			*
 		from goodsInfo
 	</select>
 	<insert id="insert" parameterType="Goods">
@@ -17,7 +17,7 @@
 	<select id="SellerList" resultType="Goods" >
 		select 
 			goodsIdx, goodsName
-		from goodsInfo
+		from goodsInfo 
 	</select>
 	
 	<update id="delete" parameterType="Goods"> 

@@ -1,49 +1,59 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 	<%
 	request.setCharacterEncoding("utf-8");
-	String goodsIdx=request.getParameter("goodsIdx"); %>
+	String goodsIdx=request.getParameter("goodsIdx"); 
+	String goodsName=request.getParameter("goodsName"); 
+	String price=request.getParameter("goodsPrice"); 
+	String explanation=request.getParameter("goodsExplanation"); 
+	String id=request.getParameter("goodsId"); 
+		%>
+<%@ page session="true" %>
 <!DOCTYPE html>
+
 <html lang="kr">
 <head>
   <meta charset="UTF-8">
-  <title>상품정보</title>
+  <title>goodsInfo</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="goodsUpdate.css">
+  <link rel="stylesheet" type="text/css" href="goodsInfo.css">
 </head>
 <body>
-
-  <div class="container">
-    <div>
-      <h1>현승우님의 상품</h1>
+  <div class="row">
+  <div id ="container" class="container col-md-6 col-md-offset-3">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+      <div id="top">
+      <div id="goodsName" >
+    <h2><%=goodsName %></h2>
     </div>
-      <form action="goodsUpdateForm" method="post">
-       <div class="form-group">
-      <label for="goodsIdx" >상품번호 </label>
-      <input class="form-control" id="goodsIdx" type="text" name="goodsIdx" value="<%=goodsIdx%>" readonly>
-
+    <div id="bts">
+    <button class="btn btn-default" type="button" OnClick="window.location='loginView'">목록</button>
+    <button class="btn btn-default" type="button">수정</button>
     </div>
-    <div class="form-group">
-      <label for="goodsImage" >상품 이미지</label>
-      <input type="file" id="goodsImage">
     </div>
-    <div class="form-group">
-      <label for="goodsName" >상품명</label>
-      <input type="text" class="form-control" id="goodsName" name="goodsName" >
+    <div id="middle">
+      <div class="row">
+      <div id="image" class="col-md-5 ">
+      </div>
+      <div id="info"  class="col-md-7 ">
+      <p>가격 : <%=price %></p>
+      <p>판매자 : <%=id %></p>
+      <p><button class="btn btn-default" type="button">buy</button></p>
+      </div>
     </div>
-   
-    <div class="form-group">
-      <label for="goodsPrice" >가격</label>
-      <input type="text" class="form-control" id="goodsPrice" name="price">
     </div>
-    <div class="form-group">
-      <label for="detail" >상품상세설명</label>
-      <textarea id="detail" class="form-control" rows="5" name="explanation"></textarea>
+    <div class="row">
+    <div id="bottom" class="col-md-10 col-md-offset-1">
+      <p class="title">제품상세정보<p>
+        
+        <p class="content"><%=explanation %></p>
     </div>
-      <div class="form-group">
-      <input type="submit" value="수정"  />
-       <input type="reset" value="취소" OnClick="window.location='goodsManager.jeju'" />
-    </div>
-    </form>
   </div>
+  </div>
+
+  </div>
+  </div>
+
+</div>
 </body>
 </html>

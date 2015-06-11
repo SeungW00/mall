@@ -2,6 +2,7 @@
 	<%
 	request.setCharacterEncoding("utf-8");
 	String goodsIdx=request.getParameter("goodsIdx"); %>
+	<%@ page session="true" %>
 <!DOCTYPE html>
 <html lang="kr">
 <head>
