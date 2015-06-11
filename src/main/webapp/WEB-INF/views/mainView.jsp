@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page session="false"%>
+
 <!DOCTYPE html>
 <html lang="kr">
 <head>
@@ -11,6 +11,8 @@
 
 </head>
 <body>
+	<% 
+	 session.removeAttribute("userLoginInfo"); %>
   <div class="container">
     <div>
       <button class="btn" type="button" OnClick="window.location='register'">회원가입</button>

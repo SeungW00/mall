@@ -15,6 +15,7 @@
     <div>
        <h4>${sessionScope.userLoginInfo.name}님 환영합니다 </h4> 
       <button class="btn" type="button" OnClick="window.location='goodsRegister'">상품등록</button>
+      <button class="btn" type="button" OnClick="window.location='shoppingBasket.jeju'">장바구니</button>
       <button class="btn " id="logoutBt" type="button" OnClick="window.location='mainView'">로그아웃</button>
     </div>
      <div>
