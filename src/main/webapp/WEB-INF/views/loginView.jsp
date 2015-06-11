@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page session="true" %>
 <!DOCTYPE html>
 <html lang="kr">
 <head>
@@ -15,7 +16,7 @@
        <h4>${sessionScope.userLoginInfo.name}님 환영합니다 </h4> 
       <button class="btn" type="button" OnClick="window.location='goodsRegister'">상품등록</button>
       <button class="btn" type="button" OnClick="window.location='goodsManager'">상품관리</button>
-      <button class="btn " id="logoutBt" type="button">로그아웃</button>
+      <button class="btn " id="logoutBt" type="button" OnClick="window.location='mainView'">로그아웃</button>
     </div>
      <div>
       <table class="table">
