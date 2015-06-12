@@ -24,7 +24,7 @@
     </div>
      <div class="form-group">
       <label for="goodsName" >판매자</label>
-      <input type="text" class="form-control" id="goodsSeller" value="${sessionScope.userLoginInfo.id}" name="id">
+      <input type="text" class="form-control" id="goodsSeller" value="${sessionScope.userLoginInfo.id}" name="id" readonly>
     </div>
     <div class="form-group">
       <label for="goodsPrice" >가격</label>

@@ -40,6 +40,7 @@
 			</tbody>	
 		</table>
     </div>
+    <!--  
     <div id="page">
       <nav>
     <ul class="pagination">
@@ -62,6 +63,7 @@
   </nav>
 
     </div>
+    -->
 </div>
 
 </body>

@@ -50,7 +50,9 @@
       <div id="info"  class="col-md-7 ">
       <p>가격 : <%=price %></p>
       <p>판매자 : <%=id %></p>
-      <p><button class="btn btn-default" type="button">buy</button></p>
+      <form action="cartInsert" method="post">
+      <input type="hidden" name="id" value="${sessionScope.userLoginInfo.id}">
+      <button type="submit" class="btn btn-default" >buy</button></form>
       </div>
     </div>
     </div>

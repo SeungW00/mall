@@ -31,7 +31,7 @@
 			<tbody>
 			<c:forEach items="${goodsList}" var="goods">
 				<tr>
-					<td>${goods.goodsName} </td>
+					<td><a href="goodsInfo.jeju?goodsIdx=${goods.goodsIdx}&goodsName=${goods.goodsName}&goodsPrice=${goods.price}&goodsId=${goods.id}&goodsExplanation=${goods.explanation}">${goods.goodsName}</a> </td>
 					<td>${goods.price} </td>
 					<td>${goods.id} </td>
 				</tr>
@@ -40,6 +40,7 @@
 			</tbody>	
 		</table>
     </div>
+    <!-- 
     <div id="page">
       <nav>
     <ul class="pagination">
@@ -62,6 +63,7 @@
   </nav>
 
     </div>
+     -->
 </div>
 
 </body>

@@ -26,12 +26,12 @@
 				</tr>
 			</thead>
 			<tbody>
-			<c:forEach items="${goodsList}" var="goods">
+			<c:forEach items="${cartList}" var="cart">
 				<tr>
-					<td>${goods.goodsName}</td>
-					<td>${goods.price} </td>
-					<td>${goods.id} </td>
-					<td><button class="btn btn-default " OnClick="window.location='shoppingBasket.jeju'">주문취소</button></td>
+					<td>${cart.goodsName}</td>
+					<td>${cart.price} </td>
+					<td>${cart.id} </td>
+					<td><button class="btn btn-default " OnClick="window.location='cart'">주문취소</button></td>
 				</tr>
 				
 				</c:forEach>

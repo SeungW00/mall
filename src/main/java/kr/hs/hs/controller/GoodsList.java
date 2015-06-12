@@ -2,6 +2,7 @@ package kr.hs.hs.controller;
 
 import java.util.List;
 
+import kr.hs.hs.model.Cart;
 import kr.hs.hs.model.Goods;
 import kr.hs.hs.service.GoodsService;
 
